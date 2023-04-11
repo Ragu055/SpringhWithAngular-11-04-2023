@@ -1,0 +1,25 @@
+<div>
+    <h2>ShopMall Details</h2>
+</div>
+<div class="panel-body">
+    <table>
+        <thead>
+            <tr>
+                <td>ShopNo</td>
+                <td>ShopName</td>
+                <td>ShopLocation</td>
+                <td>Email Id</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let shm of shopMall | async">
+                <td>{{shm.shopNo}}</td>
+                <td>{{shm.shopName}}</td>
+                <td>{{shm.shopLocation}}</td>
+                <td>{{shm.email}}</td>
+
+            </tr>
+        </tbody>
+    </table>
+
+</div>
